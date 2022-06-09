@@ -165,6 +165,7 @@ html {
   font-size: var(--fs-4);
   line-height: 1.4;
   letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 /*-----------------------------------*\ 
@@ -414,6 +415,25 @@ html {
   padding: 150px var(--px) var(--py);
 }
 
+.home-info {
+  color: var(--white-1);
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.home-info p {
+  margin-bottom: 5px;
+}
+
+.home-info i {
+  padding-right: 0.5em;
+}
+
+.home-info a:link,
+.home-info a:visited {
+  color: var(--white-1);
+}
+
 .home-left {
   text-align: center;
 }
@@ -558,6 +578,10 @@ html {
 
 .about {
   padding: var(--py) var(--px);
+  /* padding-top: var(--py);
+  padding-left: var(--px);
+  padding-right: var(--px);
+  padding-bottom: var(--py); */
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
@@ -577,6 +601,70 @@ html {
   height: 100%;
   object-fit: cover;
   animation: lazy-scaleUp 30s linear infinite;
+}
+
+.chef-img {
+  position: absolute;
+  width: 60%;
+}
+
+.chef-1 {
+  top: 15%;
+  left: -4%;
+  /* animation: scaleUp 3s ease-in-out infinite; */
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.chef-2 {
+  bottom: 5%;
+  right: -4%;
+  /* animation: scaleUp 4s ease-in-out infinite; */
+  border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.our-story .btn-primary {
+  margin-inline: auto;
+}
+
+.read-more-btn {
+  z-index: 0;
+}
+
+.more-text {
+  /* display: none; */
+  height: 0;
+  color: var(--white-1);
+  font-weight: 500;
+  padding-left: var(--px);
+  padding-right: var(--px);
+  margin-inline: auto;
+  max-width: var(--mw);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  /* transition: opacity 0.5s, height 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s; */
+  z-index: 1;
+}
+
+.more-text-open {
+  height: 100%;
+  padding-bottom: var(--py);
+  opacity: 1;
+  /* height: 5rem; */
+}
+
+.more-text-title {
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.more-text p {
+  margin-bottom: 20px;
 }
 
 @keyframes lazy-scaleUp {
@@ -693,11 +781,20 @@ html {
 }
 
 .product .section-title {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .product .section-text {
   margin-bottom: 60px;
+}
+
+.product-desc {
+  color: var(--white-1);
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 .products-grid {
@@ -762,6 +859,7 @@ html {
   font-size: var(--fs-3);
   font-weight: 600;
   padding-left: 15px;
+  margin-bottom: 10px;
 }
 
 .product-card .product-price {
@@ -871,6 +969,21 @@ html {
   font-size: 14px;
   color: var(--space-cadet);
   font-weight: 600;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*-----------------------------------*\ 
