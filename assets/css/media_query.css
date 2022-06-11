@@ -10,6 +10,12 @@
   #for large mobile
 \*-----------------------------------*/
 
+@media (max-width: 370px) {
+  .contact-title {
+    max-width: 260px;
+  }
+}
+
 @media (min-width: 450px) {
   /**
    * CUSTOM PROPERTY 
@@ -80,6 +86,7 @@
   .services,
   .product,
   .testimonials,
+  .contact,
   .footer-wrapper {
     max-width: var(--mw);
     margin-inline: auto;
@@ -178,6 +185,12 @@
   .products-grid {
     grid-template-columns: 1fr 1fr;
     gap: 60px 40px;
+    margin-bottom: 70px;
+  }
+
+  .menu-btns {
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 60px 40px; */
     margin-bottom: 70px;
   }
 
@@ -284,6 +297,13 @@
     padding: var(--py) var(px) 120px;
   }
 
+  .contact {
+    grid-template-columns: 3fr 4fr;
+    gap: 80px;
+    align-items: center;
+    padding: var(--py) var(px) 120px;
+  }
+
   .about-left .img-box {
     aspect-ratio: auto;
   }
@@ -315,6 +335,10 @@
 
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-btns {
+    grid-template-columns: repeat(4, 180px);
   }
 
   /**
