@@ -152,6 +152,10 @@ html {
   gap: 10px;
 }
 
+.order-btn {
+  cursor: pointer;
+}
+
 .section-title {
   max-width: 420px;
   color: var(--white-1);
@@ -965,6 +969,10 @@ html {
 }
 
 .product .btn-primary {
+  margin-inline: auto;
+}
+
+.product .order-btn {
   margin-inline: auto;
 }
 
