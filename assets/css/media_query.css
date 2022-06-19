@@ -16,6 +16,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .logo__img {
+    width: 234px;
+    height: 43px;
+  }
+}
+
 @media (min-width: 450px) {
   /**
    * CUSTOM PROPERTY 
