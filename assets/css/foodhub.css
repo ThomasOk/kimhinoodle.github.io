@@ -397,14 +397,14 @@ html {
   background: var(--white);
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 30px;
-  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+  .desc-menu {
+    text-align: center;
+    color: var(--white-1);
+    font-size: var(--fs-3);
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
   z-index: 15;
 }
 
@@ -780,6 +780,31 @@ html {
   color: var(--rhythm);
   font-size: var(--fs-4);
   line-height: 1.5;
+}
+
+#menu .btn-secondary {
+  margin-inline: auto;
+  margin-bottom: 60px;
+  height: 55px;
+  padding: 0 25px;
+  color: var(--space-cadet);
+  transition: var(--default-transition);
+}
+
+.desc-menu {
+  text-align: center;
+  color: var(--white-1);
+  font-size: var(--fs-3);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#menu a,
+#menu a:visited {
+  color: var(--space-cadet);
+  font-weight: 600;
 }
 
 /*-----------------------------------*\ 
