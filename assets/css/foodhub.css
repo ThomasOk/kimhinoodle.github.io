@@ -451,6 +451,10 @@ html {
   margin-bottom: 30px;
 }
 
+.home-font {
+  font-family: 'Nunito', sans-serif;
+}
+
 .main-heading {
   color: var(--white-1);
   font-size: var(--fs-7);
