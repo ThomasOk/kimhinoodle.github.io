@@ -14,9 +14,12 @@ const foodItems = document.querySelectorAll('.food-item');
 const productsGrid = document.querySelector('.products-grid');
 //const container = document.querySelector('.btn-container');
 
+const homemadeLogo = `<img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">`;
+
 const menu = [
   {
-    title: 'Samoussa (2 pièces)',
+    logo: '',
+    title: `Samoussa (2 pièces)`,
     category: 'Entrées',
     price: '6.00',
     img: './assets/images/samoussas2.png',
@@ -25,6 +28,7 @@ const menu = [
     d'épices. </br> Au choix: boeuf ou légumes.`,
   },
   {
+    logo: '',
     title: 'Nems porc ou crevettes (2 pièces)',
     category: 'Entrées',
     price: '5.50',
@@ -35,27 +39,31 @@ const menu = [
     Choix poulet ou légumes : + 0,50 €.`,
   },
   {
-    title: 'Rouleaux de printemps',
+    logo: '',
+    title: 'Rouleau de printemps (1 pièce)',
     category: 'Entrées',
     price: '5.50',
     img: './assets/images/rouleaux_printemps.png',
     desc: `Spécialités culinaires du Vietnam, choisissez nos délicieux rouleaux de printemps, se composant d'une garniture à base de poulet ou crevettes, de nouilles de riz, et de nombreux ingrédients connus pour leurs bienfaits (concombre, laitue), pour ajouter une note fraîche , légère et saine à votre repas.`,
   },
   {
+    logo: '',
     title: 'Raviolis frits (4 pièces)',
     category: 'Entrées',
     price: '5.50',
-    img: './assets/images/raviolis.png',
+    img: './assets/images/raviolis2.png',
     desc: ` De savoureux raviolis constitués d'une pâte de farine de blé enveloppant une délicieuse farce à base de viande et champignons parfumés.`,
   },
   {
+    logo: '',
     title: 'Tempura (3 pièces)',
     category: 'Entrées',
     price: '6.00',
-    img: './assets/images/tempuras.png',
+    img: './assets/images/tempuras2.png',
     desc: ` Délicieux beignets de crevette à base de farine de blé.`,
   },
   {
+    logo: '',
     title: 'Salade de vermicelles',
     category: 'Entrées',
     price: '5.50',
@@ -65,6 +73,7 @@ const menu = [
     parfums asiatiques. Au choix : poulet ou crevettes.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Soupe Phnom Penh',
     category: 'Plats',
     price: '13.00',
@@ -72,6 +81,7 @@ const menu = [
     desc: `Célèbre et savoureuse soupe cambodienne traditionnelle, préparée avec des nouilles de riz, bouillon de porc et poulet et ses garnitures.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Soupe Boeuf Boulette',
     category: 'Plats',
     price: '14.00',
@@ -81,6 +91,7 @@ const menu = [
     ciboulette.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Soupe Nouille Canard',
     category: 'Plats',
     price: '12.50',
@@ -89,6 +100,7 @@ const menu = [
     tranches de canard, coriandre et soja.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Soupe raviolis',
     category: 'Plats',
     price: '12.50',
@@ -96,6 +108,7 @@ const menu = [
     desc: `Voyagez en Chine avec notre soupe de raviolis, grâce à son bouillon fait maison, et garnis d'un mélange de viande hachée de porc et de crevettes.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Loc Lac',
     category: 'Plats',
     price: '12.50',
@@ -103,6 +116,7 @@ const menu = [
     desc: `De délicieux émincés de boeuf caramélisés sautés au Wok, accompagnés de son riz blanc sauté à la tomate, concombre, oignons et ciboulette.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Bo Bun',
     category: 'Plats',
     price: '12.00',
@@ -114,6 +128,7 @@ const menu = [
     Choix entre boeuf ou poulet.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Poke Bowl KHN',
     category: 'Plats',
     price: '13.00',
@@ -121,6 +136,7 @@ const menu = [
     desc: `Vedette de la cuisine Healthy, le "Poké" KHN vous régalera par sa fraîcheur tout en restant sain. Il se compose de nouilles de riz, avocat, crudités et de généreux morceaux de saumon frais aux parfums asiatiques.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Banh Sung',
     category: 'Plats',
     price: '13.00',
@@ -130,6 +146,7 @@ const menu = [
     coco. Simple, rafraîchissante et gourmande!.`,
   },
   {
+    logo: homemadeLogo,
     title: 'Lot Tcha',
     category: 'Plats',
     price: '13.00',
@@ -147,6 +164,7 @@ const menu = [
   //   desc: `Célèbre et savoureuse soupe cambodienne traditionnelle, préparée avec des nouilles de riz, bouillon de porc et poulet et ses garnitures.`,
   // },
   {
+    logo: homemadeLogo,
     title: 'Nouilles sautées nature',
     category: 'Plats',
     price: '10.50',
@@ -157,10 +175,11 @@ const menu = [
     canard (supplément : +3,00€)`,
   },
   {
+    logo: homemadeLogo,
     title: 'Pad Thai',
     category: 'Plats',
     price: '13.00',
-    img: './assets/images/padthai.png',
+    img: './assets/images/pad_thai2.png',
     desc: `Savourez le fameux Pad Thai, plat traditionnel thaïlandais à la
     fois rassasiant et diététique. Composé d'une base de nouilles
     de riz, agrémentés de légumes, de tofu, de viande ou fruits
@@ -169,13 +188,15 @@ const menu = [
     Choix entre boeuf, poulet ou crevettes.`,
   },
   {
+    logo: '',
     title: 'Mango Sticky Rice ',
     category: 'Desserts',
     price: '6.50',
-    img: './assets/images/mango.jpg',
+    img: './assets/images/mango_sticky_rice2.png',
     desc: `Dessert gourmand originaire du Laos, à base de riz, de lait de coco et de mangue.`,
   },
   {
+    logo: '',
     title: 'Boule de neige coco',
     category: 'Desserts',
     price: '5.50',
@@ -183,6 +204,7 @@ const menu = [
     desc: `Découvrez les réputées boules de coco, préparées avec de la noix de coco et de la farine de riz gluant.`,
   },
   {
+    logo: '',
     title: 'Salade de fruits',
     category: 'Desserts',
     price: '4.50',
@@ -190,13 +212,15 @@ const menu = [
     desc: `Délicieuse salade de fruits fraîche et raffraîchissante.`,
   },
   {
+    logo: '',
     title: 'Mochi glacé',
     category: 'Desserts',
     price: '6.00',
-    img: './assets/images/mochi-glace.jpeg',
+    img: './assets/images/mochi2.png',
     desc: `Savourez la glace autrement avec le mochi glacé, spécialité japonaise correspondant à une demi sphère en pâte de riz garnie d'un coeur glacé.`,
   },
   {
+    logo: '',
     title: 'Boule de glace',
     category: 'Desserts',
     price: '4.00',
@@ -229,7 +253,7 @@ function displayMenuItems(menuItems) {
               />
             </div>
             <div class="product-content">
-              <h3 class="product-name">${item.title}</h3>
+              <h3 class="product-name">${item.logo}${item.title}</h3>
               <h3 class="product-name">${item.price}€</h3>
               <p class="product-desc">${item.desc}</p>
             </div>

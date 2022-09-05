@@ -806,6 +806,15 @@ html {
   transition: var(--default-transition);
 }
 
+.home-made {
+  display: inline;
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 .desc-menu {
   text-align: center;
   color: var(--white-1);
