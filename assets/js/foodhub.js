@@ -168,7 +168,7 @@ const menu = [
     title: 'Nouilles sautées nature',
     category: 'Plats',
     price: '10.50',
-    img: './assets/images/nouillessautees3.png',
+    img: './assets/images/nouilles_sautees6.png',
     desc: `Voici nos fameuses nouilles sautées au Wok moelleuses et parfumées ! A base de boeuf, poulet, crevettes ou full légumes, une bouchée suffira à vous transporter au coeur de l'Asie ; vous aurez le choix entre plusieurs assaisonnements : Soja, Aigre douce, Saté ou Curry.
     </br>Au choix : boeuf, poulet ou crevettes (supplément : +1,50€) </br>
     végétarien (supplément : +1,00€) </br>
@@ -179,7 +179,7 @@ const menu = [
     title: 'Pad Thai',
     category: 'Plats',
     price: '13.00',
-    img: './assets/images/pad_thai2.png',
+    img: './assets/images/pad_thai5.png',
     desc: `Savourez le fameux Pad Thai, plat traditionnel thaïlandais à la
     fois rassasiant et diététique. Composé d'une base de nouilles
     de riz, agrémentés de légumes, de tofu, de viande ou fruits
@@ -192,7 +192,7 @@ const menu = [
     title: 'Mango Sticky Rice ',
     category: 'Desserts',
     price: '6.50',
-    img: './assets/images/mango_sticky_rice2.png',
+    img: './assets/images/mango.png',
     desc: `Dessert gourmand originaire du Laos, à base de riz, de lait de coco et de mangue.`,
   },
   {
