@@ -510,8 +510,9 @@ function displayMenuButtons() {
   // filter items
   filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-      formuleDesc.innerHTML = '';
-      blocFormuleCard.innerHTML = '';
+      //formuleDesc.innerHTML = '';
+      //blocFormuleCard.innerHTML = '';
+      blocFormule.innerHTML = '';
       const category = e.currentTarget.dataset.id;
       const menuCategory = menu.filter(function (menuItem) {
         // console.log(menuItem.category);
