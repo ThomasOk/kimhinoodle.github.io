@@ -15,6 +15,7 @@ const productsGrid = document.querySelector('.products-grid');
 const formuleBtn = document.querySelector('#menu-formule');
 const formuleDesc = document.querySelector('#formule-desc');
 const blocFormuleCard = document.querySelector('.bloc-formule-card');
+const formuleCard = document.querySelector('.formule-card');
 const blocFormule = document.querySelector('.bloc-formule');
 //const container = document.querySelector('.btn-container');
 
@@ -282,207 +283,114 @@ function displayMenuItems(menuItems) {
   productsGrid.innerHTML = displayMenu;
 }
 
-function displayFormule() {
-  const bloc = `<div class="desc-menu text-font">
-  <p class="formule-desc-text">Retrouvez ci-dessous nos formules proposées.</p>
-  <p class="cat-card">Formule midi (Entrée + Plat ou Plat + Dessert) : 14,50€</p>
-  <p class="cat-card">Formule midi + Boisson : 16,00€ </p>
-  <p class="formule-desc-text">À choisir parmi la carte suivante : </p>
-  </div>
-  <div class="bloc-formule-card">
-  <h2 class="desc-menu text-font cat-card">Entrées</h2>
-  <div class="products-grid text-font">
-  <div class="product-item">
-  <div class="product-card">
-    <div class="img-box">
-      <img
-        src="./assets/images/Nems.png"
-        alt="Nems porc ou crevettes (2 pièces)"
-        class="product-img"
-        width="337px"
-        height="337px"
-        loading="lazy"
-      />
-    </div>
-    <div class="product-content">
-      <h3 class="product-name">Nems porc ou crevettes (2 pièces)</h3>
-    </div>
-  </div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/salade_vermicelles.png" alt="Salade de vermicelles" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Salade de vermicelles</h3>
-            </div>
-          </div>
-      </div>
-      <div class="product-item">
-      <div class="product-card">
-        <div class="img-box">
-          <img src="./assets/images/rouleaux_printemps.png" alt="Rouleau de printemps (1 pièce)" class="product-img" width="337px" height="337px" loading="lazy">
-        </div>
-        <div class="product-content">
-          <h3 class="product-name">Rouleau de printemps (1 pièce)</h3>
-        </div>
-      </div>
-  </div>
-</div>
-<h3 class="desc-menu text-font cat-card">Plats</h3>
-<div class="products-grid text-font">
-<div class="product-item">
-<div class="product-card">
-  <div class="img-box">
-    <img src="./assets/images/nouilles_sautees6.png" alt="Nouilles sautées nature" class="product-img" width="337px" height="337px" loading="lazy">
-  </div>
-  <div class="product-content">
-    <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Nouilles sautées</h3>
-  </div>
-</div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/bol2.png" alt="Bo Bun" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Bo Bun</h3>
-            </div>
-          </div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/pokebawl.png" alt="Poke Bowl KHN" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Poke Bowl KHN</h3>
-            </div>
-          </div>
-</div>
-<div class="product-item">
-      <div class="product-card">
-        <div class="img-box">
-          <img src="./assets/images/loklak.png" alt="Loc Lac" class="product-img" width="337px" height="337px" loading="lazy">
-        </div>
-        <div class="product-content">
-          <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Loc Lac</h3>
-        </div>
-      </div>
-</div>
-</div>
-<h2 class="desc-menu text-font cat-card">Desserts</h2>
-<div class="products-grid text-font">
-<div class="product-item">
-<div class="product-card">
-  <div class="img-box">
-    <img src="./assets/images/saladedefruits.png" alt="Salade de fruits" class="product-img" width="337px" height="337px" loading="lazy">
-  </div>
-  <div class="product-content">
-    <h3 class="product-name">Salade de fruits</h3>
-  </div>
-</div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/glace.png" alt="Boule de glace" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Boules de glace</h3>
-          </div>
-</div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/perlescoco2.png" alt="Boule de neige coco" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Boule de neige coco</h3>
-            </div>
-          </div>
-          </div>
-</div>
-  </div>
-  <div class="desc-menu text-font">
-  <p class="cat-card">Formule enfant Plat + Dessert (jusqu'à 10 ans) : 9,00€</p>
-  <p class="formule-desc-text">À choisir parmi la carte suivante : </p>
-  </div>
-  <div class="bloc-formule-card">
-  <h2 class="desc-menu text-font cat-card">Plats</h2>
-  <div class="products-grid text-font">
-  <div class="product-item">
-  <div class="product-card">
-    <div class="img-box">
-      <img src="./assets/images/nouilles_sautees6.png" alt="Nouilles sautées nature" class="product-img" width="337px" height="337px" loading="lazy">
-    </div>
-    <div class="product-content">
-      <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Nouilles sautées</h3>
-    </div>
-  </div>
-  </div>
-  <div class="product-item">
-      <div class="product-card">
-        <div class="img-box">
-          <img src="./assets/images/loklak.png" alt="Loc Lac" class="product-img" width="337px" height="337px" loading="lazy">
-        </div>
-        <div class="product-content">
-          <h3 class="product-name"><img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">Loc Lac</h3>
-        </div>
-      </div>
-</div>
-  </div>
-  <h2 class="desc-menu text-font cat-card">Desserts</h2>
-  <div class="products-grid text-font">
-  <div class="product-item">
-<div class="product-card">
-  <div class="img-box">
-    <img src="./assets/images/saladedefruits.png" alt="Salade de fruits" class="product-img" width="337px" height="337px" loading="lazy">
-  </div>
-  <div class="product-content">
-    <h3 class="product-name">Salade de fruits</h3>
-  </div>
-</div>
-</div>
-<div class="product-item">
-          <div class="product-card">
-            <div class="img-box">
-              <img src="./assets/images/glace.png" alt="Boule de glace" class="product-img" width="337px" height="337px" loading="lazy">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Boules de glace</h3>
-          </div>
-</div>
-</div>
-</div>
-</div>
-  `;
-  productsGrid.innerHTML = '';
-  blocFormule.innerHTML = bloc;
-}
-
 function displayFormuleDesc() {
-  const descText = `<p class="formule-desc-text">Retrouvez ci-dessous nos formules proposées.</p>
-  <p>Formule midi (Entrée + Plat ou Plat + Dessert) : 14,50€</p>
-  <p>Formule midi + Boisson : 16,00€ </p>
-  <p class="formule-desc-text">À choisir parmi la carte suivante : </p>`;
+  // const descText = `<p class="formule-desc-text">Retrouvez ci-dessous nos formules proposées.</p>
+  // <p>Formule midi (Entrée + Plat ou Plat + Dessert) : 14,50€</p>
+  // <p>Formule midi + Boisson : 16,00€ </p>
+  // <p class="formule-desc-text">À choisir parmi la carte suivante : </p>`;
+
+  const descText = `<p class="formule-desc-text">Retrouvez ci-dessous nos formules proposées.</p>`;
 
   formuleDesc.innerHTML = descText;
+  productsGrid.innerHTML = '';
 }
 
-// function displayFormule() {
-//   const formule = ``;
+function displayFormule() {
+  const formule = `<div class="price-row">
+            
+  <div class="price-col">
+    <div class="title-card">
+      <p>Formule Entrée/Plat ou Plat/Dessert</p>
+    </div>
+    <div class="card-desc">
+      <p>À choisir parmi la carte</p>
+    </div>
+    <div class="card-price">
+      <h3>17,00€</h3>
+    </div>
+  </div>
+  
+  <div class="price-col">
+    <div class="title-card">
+      <p>Formule Entrée / Plat / Dessert</p>
+    
+    </div>
+    <div class="card-desc">
+      <p>À choisir parmi la carte</p>
+    </div>
+    <div class="card-price">
+      <h3>21,50€</h3>
+    </div>
+  </div>
+  
+  <div class="price-col">
+    <div class="title-card">
+      <p>Formule midi Entrée/Plat ou Plat/Dessert</p>
+    </div>
+    <div class="card-desc">
+      <p>Une entrée parmi :</p>
+      <ul>
 
-//   productsGrid.innerHTML = '';
-//   blocFormuleCard.innerHTML = formule;
-//   //productsGrid.innerHTML = formule;
-// }
+        <li>Nems porc ou crevettes</li>
+        
+        <li>Salade vermicelles</li>
+        
+        <li>Rouleau de printemps</li>
+        
+       </ul>
+       <p>Un plat parmi :</p>
+      <ul>
+
+        <li>Nouilles Sautées</li>
+        
+        <li>Bo Bun</li>
+        
+        <li>Poke Bowl</li>
+        <li>Loc Lac</li>
+        
+       </ul>
+       <p>Un dessert parmi :</p>
+      <ul>          
+        <li>Salade de fruits</li>                   
+        <li>Boules de glace</li>                   
+        <li>Boules de neige coco</li>                                
+       </ul>
+    </div>
+    <div class="card-price">
+      <h3>17,00€</h3>
+    </div>
+  </div>
+
+  <div class="price-col">
+    <div class="title-card">
+      <p>Menu kid</p>
+    </div>
+    <div class="card-desc">
+      <p>Un plat parmi :</p>
+      <ul>          
+        <li>Riz tomate et tempuras</li>                   
+        <li>Nouilles sautées au choix</li>                   
+        <li>Loc Lac</li>                                
+       </ul>
+       <p>Un dessert parmi :</p>
+      <ul>          
+        <li>Salade de fruits</li>                   
+        <li>Boules de glace (2 boules)</li>                   
+        <li>Banana split</li>                                
+       </ul>
+    </div>
+    <div class="card-price">
+      <h3>9,00€</h3>
+    </div>
+  </div>`;
+
+  productsGrid.innerHTML = '';
+  formuleCard.innerHTML = formule;
+  //productsGrid.innerHTML = formule;
+}
 
 formuleBtn.addEventListener('click', function (e) {
-  //displayFormuleDesc();
+  displayFormuleDesc();
   displayFormule();
 });
 
@@ -510,9 +418,10 @@ function displayMenuButtons() {
   // filter items
   filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-      //formuleDesc.innerHTML = '';
-      //blocFormuleCard.innerHTML = '';
+      formuleDesc.innerHTML = '';
+      blocFormuleCard.innerHTML = '';
       blocFormule.innerHTML = '';
+      formuleCard.innerHTML = '';
       const category = e.currentTarget.dataset.id;
       const menuCategory = menu.filter(function (menuItem) {
         // console.log(menuItem.category);
