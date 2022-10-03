@@ -13,10 +13,12 @@ const foodItems = document.querySelectorAll('.food-item');
 
 const productsGrid = document.querySelector('.products-grid');
 const formuleBtn = document.querySelector('#menu-formule');
+const drinksBtn = document.querySelector('#menu-boissons');
 const formuleDesc = document.querySelector('#formule-desc');
 const blocFormuleCard = document.querySelector('.bloc-formule-card');
 const formuleCard = document.querySelector('.formule-card');
 const blocFormule = document.querySelector('.bloc-formule');
+const blocDrinks = document.querySelector('.bloc-drinks');
 //const container = document.querySelector('.btn-container');
 
 const homemadeLogo = `<img class="home-made" src="./assets/images/homemade_color.png" alt="Fait maison">`;
@@ -94,15 +96,6 @@ const menu = [
     desc: `Dégustez l'authentique soupe de nouilles agrémentée de
     boulettes de boeuf, accompagnée de coriandre, soja et
     ciboulette.`,
-  },
-  {
-    logo: homemadeLogo,
-    title: 'Soupe Nouille Canard',
-    category: 'Plats',
-    price: '12.50',
-    img: './assets/images/soupe4.png',
-    desc: `Savoureuse soupe de nouilles fraîches accompagnée de
-    tranches de canard, coriandre et soja.`,
   },
   {
     logo: homemadeLogo,
@@ -300,32 +293,51 @@ function displayFormule() {
             
   <div class="price-col">
     <div class="title-card">
-      <p>Formule Entrée/Plat ou Plat/Dessert</p>
+      <p class="title-text">Formule Entrée/Plat ou Plat/Dessert</p>
+      <p class="title-price">17,00€</p>
+      <p class="title-text">Formule Entrée/Plat/Dessert</p>
+      <p class="title-price">21,50€</p>
     </div>
     <div class="card-desc">
-      <p>À choisir parmi la carte</p>
-    </div>
-    <div class="card-price">
-      <h3>17,00€</h3>
+      <p>Une entrée parmi :</p>
+      <ul>
+
+        <li>Nems au choix</li>
+        
+        <li>Tempura</li>
+        
+        <li>Samoussa</li>
+        <li>Rouleau de Printemps</li>
+        
+       </ul>
+       <p>Un plat parmi :</p>
+      <ul>
+
+        <li>Pad Thaï</li>
+        <li>Lot Tcha au choix</li>
+        <li>Soupe Phnom Penh</li>
+        <li>Ban Sung</li>
+        <li>Soupe Nouilles Canard</li>
+        <li>Soupe raviolis</li>
+
+       </ul>
+       <p>Un dessert parmi :</p>
+      <ul>          
+        <li>Salade de fruits</li>                   
+        <li>Mochi</li>                   
+        <li>Banana Split</li>                                
+        <li>Mango Sticky Rice</li>                                
+       </ul>
     </div>
   </div>
   
-  <div class="price-col">
-    <div class="title-card">
-      <p>Formule Entrée / Plat / Dessert</p>
-    
-    </div>
-    <div class="card-desc">
-      <p>À choisir parmi la carte</p>
-    </div>
-    <div class="card-price">
-      <h3>21,50€</h3>
-    </div>
-  </div>
   
   <div class="price-col">
     <div class="title-card">
-      <p>Formule midi Entrée/Plat ou Plat/Dessert</p>
+      <p class="title-text">Formule Midi Entrée/Plat ou Plat/Dessert</p>
+      <p class="title-price">14,50€</p>
+      <p class="title-text">Formule Midi + Boisson</p>
+      <p class="title-price">16,00€</p>
     </div>
     <div class="card-desc">
       <p>Une entrée parmi :</p>
@@ -356,14 +368,13 @@ function displayFormule() {
         <li>Boules de neige coco</li>                                
        </ul>
     </div>
-    <div class="card-price">
-      <h3>17,00€</h3>
-    </div>
+
   </div>
 
   <div class="price-col">
     <div class="title-card">
-      <p>Menu kid</p>
+      <p class="title-text"">Menu kid</p>
+      <p class="title-price">9,00€</p>
     </div>
     <div class="card-desc">
       <p>Un plat parmi :</p>
@@ -379,19 +390,129 @@ function displayFormule() {
         <li>Banana split</li>                                
        </ul>
     </div>
-    <div class="card-price">
-      <h3>9,00€</h3>
-    </div>
   </div>`;
 
   productsGrid.innerHTML = '';
+  blocDrinks.innerHTML = '';
   formuleCard.innerHTML = formule;
+  //productsGrid.innerHTML = formule;
+}
+
+function displayDrinks() {
+  const drinks = `<div class="list">
+  <h2 class="list-title">Avec alcool</h2>
+  <ul>
+    <li class="item"><span    class="name">Ricard (2 cl)</span>
+      <span class="price">3,50€</span>
+    </li>
+<li class="item"><span class="name">Pastis 51 (2 cl)</span>
+      <span class="price">3,50€</span>
+    </li>
+<li class="item"><span class="name">Martini (6 cl)</span>
+      <span class="price">5,00€</span>
+    </li>
+<li class="item"><span class="name">Kir (12 cl)</span>
+      <span class="price">5,00€</span>
+    </li>
+       <li class="item"><span class="name">Bière Asahi (33 cl)</span>
+      <span class="price">5,00€</span>
+    </li>
+    <li class="item"><span class="name">Bière CASS (33 cl)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Bière DESPERADOS (33 cl)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Pression 1664 (25 cl)</span>
+      <span class="price">4,50€</span>
+    </li>
+    <li class="item"><span class="name">Pression 1664 (33 cl)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Pression ambrée THOR (25 cl)</span>
+      <span class="price">5,00€</span>
+    </li>
+    <li class="item"><span class="name">Pression ambrée THOR (33 cl)</span>
+      <span class="price">6,50€</span>
+    </li>
+    <li class="item"><span class="name">Alcool de riz saké Mei Kuei Lu Chiew (4cl)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Get 27 (6cl)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Rhum Havana Club (4 cl)</span>
+      <span class="price">8,00€</span>
+    </li>
+    <li class="item"><span class="name">Whisky Jack Daniel's (4 cl)</span>
+      <span class="price">8,00€</span>
+    </li>
+  </ul>
+</div>
+
+<div class="list">
+  <h2 class="list-title">Sans alcool</h2>
+  <ul>
+    <li class="item"><span class="name">Coca cola (33 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Orangina (25 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Limonade artisanale bio (33 cl)</span>
+      <span class="price">5,00€</span>
+    </li>
+    <li class="item"><span class="name">Jus de pomme (20 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Jus de orange (20 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Jus de abricot (20 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Evian ou San Pellegrino (50 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+    <li class="item"><span class="name">Evian ou San Pellegrino (1 l)</span>
+      <span class="price">6,00€</span>
+    </li>
+    <li class="item"><span class="name">Perrier (25 cl)</span>
+      <span class="price">4,00€</span>
+    </li>
+  </ul>
+</div>
+
+<div class="list">
+  <h2 class="list-title">Café & Thé</h2>
+  <ul>
+    <li class="item"><span class="name">Expresso</span>
+      <span class="price">2,00€</span>
+    </li>
+    <li class="item"><span class="name">Double Expresso</span>
+      <span class="price">3,50€</span>
+    </li><li class="item"><span class="name">Thé (Menthe, Verveine)</span>
+      <span class="price">3,00€</span>
+    </li>
+    <li class="item"><span class="name">Bubble Tea</span>
+      <span class="price">6,00€</span>
+    </li>
+  </ul>
+</div>`;
+
+  productsGrid.innerHTML = '';
+  formuleCard.innerHTML = '';
+  blocDrinks.innerHTML = drinks;
   //productsGrid.innerHTML = formule;
 }
 
 formuleBtn.addEventListener('click', function (e) {
   displayFormuleDesc();
   displayFormule();
+});
+
+drinksBtn.addEventListener('click', function (e) {
+  displayDrinks();
 });
 
 function displayMenuButtons() {
@@ -422,6 +543,7 @@ function displayMenuButtons() {
       blocFormuleCard.innerHTML = '';
       blocFormule.innerHTML = '';
       formuleCard.innerHTML = '';
+      blocDrinks.innerHTML = '';
       const category = e.currentTarget.dataset.id;
       const menuCategory = menu.filter(function (menuItem) {
         // console.log(menuItem.category);
