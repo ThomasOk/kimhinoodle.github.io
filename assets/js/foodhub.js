@@ -29,7 +29,7 @@ const menu = [
     title: `Samoussa (2 pièces)`,
     category: 'Entrées',
     price: '6.00',
-    img: './assets/images/samoussas2.png',
+    img: './assets/images/samoussas3.png',
     desc: `De friands beignets triangulaires croustillants garnis
     d'une farce de légumes, de viande de boeuf et
     d'épices. </br> Au choix: boeuf ou légumes.`,
@@ -39,7 +39,7 @@ const menu = [
     title: 'Nems porc ou crevettes (2 pièces)',
     category: 'Entrées',
     price: '5.50',
-    img: './assets/images/Nems.png',
+    img: './assets/images/nems2.png',
     desc: `D'authentiques rouleaux frits constitués d'une farce
     à base de viande, crevettes ou légumes, agrémentés
     de nouilles de riz et entourée d'une galette de riz. </br>
@@ -50,7 +50,7 @@ const menu = [
     title: 'Rouleau de printemps (1 pièce)',
     category: 'Entrées',
     price: '5.50',
-    img: './assets/images/rouleaux_printemps.png',
+    img: './assets/images/rouleau_printemps2.png',
     desc: `Spécialités culinaires du Vietnam, choisissez nos délicieux rouleaux de printemps, se composant d'une garniture à base de poulet ou crevettes, de nouilles de riz, et de nombreux ingrédients connus pour leurs bienfaits (concombre, laitue), pour ajouter une note fraîche , légère et saine à votre repas.`,
   },
   {
@@ -58,15 +58,15 @@ const menu = [
     title: 'Raviolis frits (4 pièces)',
     category: 'Entrées',
     price: '5.50',
-    img: './assets/images/raviolis2.png',
+    img: './assets/images/raviolis3.png',
     desc: ` De savoureux raviolis constitués d'une pâte de farine de blé enveloppant une délicieuse farce à base de viande et champignons parfumés.`,
   },
   {
     logo: '',
-    title: 'Tempura (3 pièces)',
+    title: 'Tempuras (3 pièces)',
     category: 'Entrées',
     price: '6.00',
-    img: './assets/images/tempuras2.png',
+    img: './assets/images/tempuras3.png',
     desc: ` Délicieux beignets de crevette à base de farine de blé.`,
   },
   {
@@ -74,7 +74,7 @@ const menu = [
     title: 'Salade de vermicelles',
     category: 'Entrées',
     price: '5.50',
-    img: './assets/images/salade_vermicelles.png',
+    img: './assets/images/salade_vermicelles2.png',
     desc: `Découvrez nos salades fraîches aux vermicelles de
     riz pleines de saveurs grâce à la sauce et à ses
     parfums asiatiques. Au choix : poulet ou crevettes.`,
@@ -107,11 +107,12 @@ const menu = [
   },
   {
     logo: homemadeLogo,
-    title: 'Loc Lac',
+    title: 'Soupe Nouille Canard',
     category: 'Plats',
-    price: '12.50',
-    img: './assets/images/loklak.png',
-    desc: `De délicieux émincés de boeuf caramélisés sautés au Wok, accompagnés de son riz blanc sauté à la tomate, concombre, oignons et ciboulette.`,
+    price: '14.00',
+    img: './assets/images/soupe4.png',
+    desc: `Savoureuse soupe de nouilles fraîches accompagnée de
+    tranches de canard, coriandre et soja.`,
   },
   {
     logo: homemadeLogo,
@@ -141,7 +142,7 @@ const menu = [
     img: './assets/images/udon.png',
     desc: `Salade de vermicelles cambodgienne et cousine du Bo
     bun conciliant crudités, nems, le tout arrosé de lait de
-    coco. Simple, rafraîchissante et gourmande!.`,
+    coco. Simple, rafraîchissante et gourmande!`,
   },
   {
     logo: homemadeLogo,
@@ -166,24 +167,31 @@ const menu = [
     title: 'Nouilles sautées nature',
     category: 'Plats',
     price: '10.50',
-    img: './assets/images/nouilles_sautees6.png',
+    img: './assets/images/pad_thai5.png',
     desc: `Voici nos fameuses nouilles sautées au Wok moelleuses et parfumées ! A base de boeuf, poulet, crevettes ou full légumes, une bouchée suffira à vous transporter au coeur de l'Asie ; vous aurez le choix entre plusieurs assaisonnements : Soja, Aigre douce, Saté ou Curry.
     </br>Au choix : boeuf, poulet ou crevettes (supplément : +1,50€) </br>
-    végétarien (supplément : +1,00€) </br>
-    canard (supplément : +3,00€)`,
+    végétarien (supplément : +1,00€)`,
   },
   {
     logo: homemadeLogo,
     title: 'Pad Thai',
     category: 'Plats',
     price: '13.00',
-    img: './assets/images/pad_thai5.png',
+    img: './assets/images/nouilles_sautees6.png',
     desc: `Savourez le fameux Pad Thai, plat traditionnel thaïlandais à la
     fois rassasiant et diététique. Composé d'une base de nouilles
     de riz, agrémentés de légumes, de tofu, de viande ou fruits
     de mer, assaisonné de sauce soja, cacahuètes concassées et
     fines herbes. </br>
     Choix entre boeuf, poulet ou crevettes.`,
+  },
+  {
+    logo: homemadeLogo,
+    title: 'Loc Lac',
+    category: 'Plats',
+    price: '12.50',
+    img: './assets/images/loklak.png',
+    desc: `Et pour ceux qui veulent du riz...</br>De délicieux émincés de boeuf caramélisés sautés au Wok, accompagnés de son riz blanc sauté à la tomate, concombre, oignons et ciboulette.`,
   },
   {
     logo: '',
@@ -222,7 +230,7 @@ const menu = [
     title: 'Mochi glacé',
     category: 'Desserts',
     price: '6.00',
-    img: './assets/images/mochi2.png',
+    img: './assets/images/mochi3.png',
     desc: `Savourez la glace autrement avec le mochi glacé, spécialité japonaise correspondant à une demi sphère en pâte de riz garnie d'un coeur glacé.`,
   },
   {
@@ -233,6 +241,14 @@ const menu = [
     img: './assets/images/glace.png',
     desc: `Fameuses boules glacées (2 boules).
     Parfums : Vanille, Citron, Chocolat, Fraise, Pistache.`,
+  },
+  {
+    logo: '',
+    title: 'Banana Split',
+    category: 'Desserts',
+    price: '6.50',
+    img: './assets/images/bananasplit.png',
+    desc: `Traditionnel dessert glacé à base de banane et de boules glacées`,
   },
 ];
 
@@ -304,9 +320,9 @@ function displayFormule() {
 
         <li>Nems au choix</li>
         
-        <li>Tempura</li>
+        <li>Tempuras</li>
         
-        <li>Samoussa</li>
+        <li>Samoussas</li>
         <li>Rouleau de Printemps</li>
         
        </ul>
@@ -316,18 +332,12 @@ function displayFormule() {
         <li>Pad Thaï</li>
         <li>Lot Tcha au choix</li>
         <li>Soupe Phnom Penh</li>
-        <li>Ban Sung</li>
+        <li>Banh Sung</li>
         <li>Soupe Nouilles Canard</li>
-        <li>Soupe raviolis</li>
 
        </ul>
-       <p>Un dessert parmi :</p>
-      <ul>          
-        <li>Salade de fruits</li>                   
-        <li>Mochi</li>                   
-        <li>Banana Split</li>                                
-        <li>Mango Sticky Rice</li>                                
-       </ul>
+       <p>Un dessert au choix</p>
+      
     </div>
   </div>
   
@@ -336,8 +346,10 @@ function displayFormule() {
     <div class="title-card">
       <p class="title-text">Formule Midi Entrée/Plat ou Plat/Dessert</p>
       <p class="title-price">14,50€</p>
-      <p class="title-text">Formule Midi + Boisson</p>
-      <p class="title-price">16,00€</p>
+      <p class="title-text">Formule Midi Entrée/Plat/Dessert</p>
+      <p class="title-price">16,50€</p>
+      <p class="title-text">Supplément boisson (sans alcool et hors boisson 1L)</p>
+      <p class="title-price">+1,50€</p>
     </div>
     <div class="card-desc">
       <p>Une entrée parmi :</p>
@@ -353,7 +365,7 @@ function displayFormule() {
        <p>Un plat parmi :</p>
       <ul>
 
-        <li>Nouilles Sautées</li>
+        <li>Nouilles Sautées au choix</li>
         
         <li>Bo Bun</li>
         
@@ -373,7 +385,14 @@ function displayFormule() {
 
   <div class="price-col">
     <div class="title-card">
-      <p class="title-text"">Menu kid</p>
+      <p class="title-text"">Menu</p>
+      <p class="kid-font">KIDS<img
+      src="./assets/images/sun-kid.png"
+      alt="logo"
+      class="logo-kid"
+    /></p>
+      <p class="title-text"">(Jusqu'à 10 ans)</p>
+      <p class="title-text"">Plat/Dessert/Boisson</p>
       <p class="title-price">9,00€</p>
     </div>
     <div class="card-desc">
@@ -388,6 +407,12 @@ function displayFormule() {
         <li>Salade de fruits</li>                   
         <li>Boules de glace (2 boules)</li>                   
         <li>Banana split</li>                                
+       </ul>
+       <p>Une boisson parmi :</p>
+      <ul>          
+        <li>Eau Evian</li>                   
+        <li>Jus de pommes</li>                   
+        <li>Tropico</li>                                
        </ul>
     </div>
   </div>`;

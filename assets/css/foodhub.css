@@ -95,7 +95,7 @@ button {
 }
 
 html {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Glory', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -984,6 +984,19 @@ html {
 
 .title-price {
   padding-bottom: 25px;
+  font-weight: 1000;
+}
+
+.kid-font {
+  font-family: 'Schoolbell', cursive;
+  font-size: 30px !important;
+  color: #ffee58;
+}
+
+.logo-kid {
+  display: inline;
+  height: 50px;
+  width: 50px;
 }
 
 .card-desc {
